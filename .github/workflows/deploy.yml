@@ -13,3 +13,4 @@ jobs:
           heroku_app_name: "mera-n8n"
           heroku_email: "i.a.mpainbhi24045@gmail.com"
           usedocker: true
+          stack: "container"
