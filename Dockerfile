@@ -1,4 +1,8 @@
-FROM docker.n8n.io/n8nio/n8n
-ENV N8N_PORT=$PORT
+FROM n8nio/n8n:latest
+
+USER root
+RUN apk add --no-cache curl
+
+USER node
 EXPOSE $PORT
 CMD ["n8n", "start"]
